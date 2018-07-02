@@ -1,0 +1,25 @@
+  
+    
+    <div class="container " *ngIf="user">
+        <p>
+        <h3 class="text-center">Welcome! this is the user profile</h3>
+        <hr>
+         <div >
+             <b>User Name:</b><br>
+       {{user.userName}}
+        </div>
+        <p>
+        <hr>
+         <div>
+             <b>Roles:</b><br>
+          <div class="row" *ngFor="let role of user.roles">{{role}}</div>
+        </div>  
+        <p>
+        <hr>
+        <div >
+            <b> Permissions:</b><br>
+          <div class="row" *ngFor="let permission of user.permissions">{{permission}}</div>
+          <hr>
+        </div>   
+    </div>
+

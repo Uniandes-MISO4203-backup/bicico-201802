@@ -1,0 +1,16 @@
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">bicico</a>
+  </li>
+ 
+   <li *ngIf='isAuthenticated'  class="logout">
+<a  href="logout">logout</a>
+</li>
+</ul>
+
+<div class="list">
+
+<router-outlet></router-outlet>
+</div>
+ 

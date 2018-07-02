@@ -1,0 +1,40 @@
+<div class="container col-4">
+    <form (ngSubmit)="onSubmit(registryForm.value)" #registryForm="ngForm"  >
+        <div class=" form-group">
+            <label for="name">username:</label>
+            <input type="text" class="form-control" id="name" (ngModel)="user.name" name="userName" >
+        </div>
+        <div class=" form-group">
+            <label for="isbn">password:</label>
+            <input type="password" class="form-control" id="pass" (ngModel)="user.pass" name="password" >
+        </div>
+        <div class=" form-group">
+            <label for="isbn">First Name:</label>
+            <input type="text" class="form-control" id="firstname" (ngModel)="user.givenname" name="givenName" >
+        </div>
+        <div class=" form-group">
+            <label for="isbn">Last Name:</label>
+            <input type="text" class="form-control" id="lastname" (ngModel)="user.lastname" name="lastname" >
+        </div>
+        <div class=" form-group">
+            <label for="isbn">Middle Name:</label>
+            <input type="text" class="form-control" id="middlename" (ngModel)="user.middle_name" name="middleName" >
+        </div>
+        <div class=" form-group">
+            <label for="isbn">SurName:</label>
+            <input type="text" class="form-control" id="surname" (ngModel)="user.sur_name" name="surName" >
+        </div>
+        <div class=" form-group">
+            <label for="isbn">Email:</label>
+            <input type="text" class="form-control" id="email" (ngModel)="user.email" name="email" >
+        </div>
+        <div class="row">
+         
+                <!--<p><strong>  admin </strong></p><input  type="checkbox" name="roles" (ngModel)="user.roles" checklist-value="key" >-->
+            
+        </div>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+</div>
+
+
